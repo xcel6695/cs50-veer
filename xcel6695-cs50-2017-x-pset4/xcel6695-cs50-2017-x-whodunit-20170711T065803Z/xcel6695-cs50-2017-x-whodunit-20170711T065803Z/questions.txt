@@ -1,0 +1,54 @@
+1.  What’s stdint.h?
+
+Ans) It is a header file which allows user to use exact width int with the help of typedef.The width is the number of bits used to store it's value in a binary 
+     system.For example - int8_t, int16_t etc.
+
+2.  What’s the point of using uint8_t, uint32_t, int32_t, and uint16_t in a program?
+
+Ans) uint8_t means integer having width of 1 8 bits which is used for BYTE in program as per program requirement.And it is a definition of unsigned integer and
+     same is the case with uint_32  and uint16_t except it has a width of 32 and 16 bits respectively.
+     Where int32_t is a signed integer having width of 32 bits.
+     
+3.  How many bytes is a BYTE, a DWORD, a LONG, and a WORD, respectively?
+
+Ans) BYTE -  1 byte
+     DWORD - 2 byte
+     LONG -  4 byte
+     WORD -  2 byte
+     
+4.  What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be? 
+    Leading bytes used to identify file formats (with high probability) are generally called "magic numbers."
+    
+Ans) Magic numbers for BMP file is 0x4D42 in hexadecimal or BM in ASCII.
+
+5.  What’s the difference between bfSize and biSize?
+
+Ans) bfsize is used to store file size in bytes and bisize is used to store size of BITMAPINFOHEADER structure in bytes.
+
+6.  What does it mean if biHeight is negative?
+
+Ans) It means that the BitMap is top down having origin at top left corner.
+
+7.  What field in BITMAPINFOHEADER specifies the BMP’s color depth (i.e., bits per pixel)?
+
+Ans) biBitCount
+
+8.  Why might fopen return NULL in lines 24 and 32 of copy.c?
+
+Ans) This happens when it cannon find the file.
+
+9.  Why is the third argument to fread always 1 in our code?
+
+Ans) It is 1 because it represents how many elements we want to read and we are always reading a struct element at a time.
+
+10. What value does line 65 of copy.c assign to padding if bi.biWidth is 3?
+ 
+Ans) 3. As explained in example.
+
+11. What does fseek do?
+
+Ans) Take scope to a particular location.
+
+12. What is SEEK_CUR?
+
+Ans) It skips if there is any padding.
